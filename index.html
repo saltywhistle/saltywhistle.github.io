@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Description" content="infamousgangsters.com bullet calculator">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/site.css" />
+    <script src="js/app.min.js"></script>
+    <title>Bullet calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="container mt-3 mt-md-5">
+        <div class="row text-center mb-3 mb-md-5">
+          <h1>infamousgangsters.com bullet calculator</h1>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+            <div class="mb-3">
+              <label for="yourRank" class="form-label">Your rank</label>
+              <select id="yourRank" name="yourRank" class="form-select">
+                <option value="hobo" selected>Hobo</option>
+                <option value="civilian">Civilian</option>
+                <option value="recruit">Recruit</option>
+                <option value="pioneer">Pioneer</option>
+                <option value="respectablePioneer">Respectable Pioneer</option>
+                <option value="businessman">Businessman</option>
+                <option value="respectableBusinessman">Respectable Businessman</option>
+                <option value="spy">Spy</option>
+                <option value="hitman">Hitman</option>
+                <option value="respectableHitman">Respectable Hitman</option>
+                <option value="assassin">Assassin</option>
+                <option value="respectableAssassin">Respectable Assassin</option>
+                <option value="factionManager">Faction Manager</option>
+                <option value="respectableFactionManager">Respectable Faction Manager</option>
+                <option value="mafioso">Mafioso</option>
+                <option value="respectableMafioso">Respectable Mafioso</option>
+                <option value="boss">Boss</option>
+                <option value="respectableBoss">Respectable Boss</option>
+                <option value="godfather">Godfather</option>
+                <option value="infamousGodfather">Infamous Godfather</option>
+                <option value="don">Don</option>
+                <option value="respectableDon">Respectable Don</option>
+                <option value="infamousGangster">Infamous Gangster</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="yourGun" class="form-label">Your gun</label>
+              <select id="yourGun" name="yourGun" class="form-select">
+                <option value="fnM240b" selected>FN M240B</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="theirRank" class="form-label">Their rank</label>
+              <select id="theirRank" name="theirRank" class="form-select">
+                <option value="hobo" selected>Hobo</option>
+                <option value="civilian">Civilian</option>
+                <option value="recruit">Recruit</option>
+                <option value="pioneer">Pioneer</option>
+                <option value="respectablePioneer">Respectable Pioneer</option>
+                <option value="businessman">Businessman</option>
+                <option value="respectableBusinessman">Respectable Businessman</option>
+                <option value="spy">Spy</option>
+                <option value="hitman">Hitman</option>
+                <option value="respectableHitman">Respectable Hitman</option>
+                <option value="assassin">Assassin</option>
+                <option value="respectableAssassin">Respectable Assassin</option>
+                <option value="factionManager">Faction Manager</option>
+                <option value="respectableFactionManager">Respectable Faction Manager</option>
+                <option value="mafioso">Mafioso</option>
+                <option value="respectableMafioso">Respectable Mafioso</option>
+                <option value="boss">Boss</option>
+                <option value="respectableBoss">Respectable Boss</option>
+                <option value="godfather">Godfather</option>
+                <option value="infamousGodfather">Infamous Godfather</option>
+                <option value="don">Don</option>
+                <option value="respectableDon">Respectable Don</option>
+                <option value="infamousGangster">Infamous Gangster</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="theirArmour" class="form-label">Their armour</label>
+              <select id="theirArmour" name="theirArmour" class="form-select">
+<!--                <option value="none">None</option>-->
+                <option value="swatVest" selected>S.W.A.T. Vest</option>
+                <option value="lightMilitary">Light Military</option>
+                <option value="mediumMilitary">Medium Military</option>
+                <option value="heavyMilitary">Heavy Military</option>
+              </select>
+            </div>
+
+            <div class="mb-5">
+              <label for="theirHealth" class="form-label">Their health</label>
+              <input type="number" id="theirHealth" name="theirHealth" class="form-control" min="1" max="100" value="100">
+            </div>
+
+            <div class="mb-5 text-center">
+              <input type="button" class="btn btn-outline-light" onclick="onSubmit()" value="Calculate">
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div id="resultArea" hidden="hidden" class="text-center">
+            <h3 id="result" class="mb-3"></h3>
+            <p>*This calculator is based on the screenshots in the innovation forum; always shoot extra bullets to ensure you kill your target.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
